@@ -1,0 +1,132 @@
+body {
+    text-align: center;
+    background: grey;
+}
+
+.select {
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .8);
+}
+
+.select h1 {
+    margin-top: 15%;
+    width: 100%;
+    color: white;
+}
+
+.choice {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 5px;
+    padding: 0.35em 1.2em;
+    border-radius: 1.5em;
+    border: 0.5em solid silver;
+    transition: all 0.2s;
+    background: cadetblue;
+}
+
+.choice:hover {
+    color: white;
+    background-color: silver;
+}
+
+.popup, .lostPopup {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+}
+
+.screen, .lost {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 125px auto;
+    width: 400px;
+    height: 400px;
+    background: white;
+}
+
+.screen h1, .screen button, .winnerTimer, .winnerLives, .winnerStars, .winnerScore,
+.lost h1, .lost button, .lossTimer, .lossLives, .lossStars, .lossScore {
+    width: 100%;
+}
+
+.winnerTimer, .winnerLives, .winnerStars, .winnerScore,
+.lossTimer, .lossLives, .lossStars, .lossScore {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.winnerLives h3, .winnerStars h3, .lossLives h3, .lossStars h3 {
+    width: 30%;
+}
+
+.screen img, .lost img {
+    height: 100px;
+}
+
+.hide {
+    visibility: hidden;
+}
+
+.button {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0.35em 1.2em;
+    border-radius: 0.12em;
+    border: 0.1em solid silver;
+    text-align: center;
+    color: white;
+    background: grey;
+    font-weight: 300;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.button:hover {
+    color: white;
+    background-color: black;
+}
+
+.score {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 0;
+    left: 0;
+    height: 9%;
+    width: 100%;
+}
+
+.score img {
+    width: 50px;
+}
+
+.stars, .lives {
+    width: 45%;
+}
+
+.timer {
+    width: 15%;
+    color: white;
+}
+
+.footer {
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    width: 99%;
+    margin-top: 600px;
+}

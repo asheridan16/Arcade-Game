@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Effective JavaScript: Frogger</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!--Character Selection-->
+    <div class="select">
+        <h1>Select your Character:</h1>
+        <button class="choice" id="first">
+            <img src="images/char-boy.png">
+        </button>
+        <button class="choice" id="second">
+            <img src="images/char-cat-girl.png">
+        </button>
+        <button class="choice" id="third">
+            <img src="images/char-horn-girl.png">
+        </button>
+        <button class="choice" id="fourth">
+            <img src="images/char-pink-girl.png">
+        </button>
+        <button class="choice" id="fifth">
+            <img src="images/char-princess-girl.png">
+        </button>
+    </div>
+
+    <!--Winner Screen-->
+    <div class="popup hide">
+        <div class="screen">
+            <h1>You Won!</h1>
+            <div class="winnerTimer"></div>
+            <div class="winnerLives"></div>
+            <div class="winnerStars"></div>
+            <div class="winnerScore"></div>
+            <!--Restart Button-->
+            <button class="button restart" id="restartWinner">
+                Restart
+            </button>
+        </div>
+    </div>
+
+    <!--Loser Screen-->
+    <div class="lostPopup hide">
+        <div class="lost">
+            <h1>Game Over</h1>
+            <div class="lossTimer"></div>
+            <div class="lossLives"></div>
+            <div class="lossStars"></div>
+            <div class="lossScore"></div>
+            <!--Restart Button-->
+            <button class="button restart" id="restartLoser">
+                Restart
+            </button>
+        </div>
+    </div>
+
+    <!--Score Bar-->
+    <div class="score">
+        <div class="stars">
+            <!--<img src="images/Star.png">-->
+        </div>
+        <div class="timer">Timer: 1:30</div>
+        <div class="lives">
+            <img src="images/Heart.png">
+            <img src="images/Heart.png">
+            <img src="images/Heart.png">
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="footer">
+        <button class="button changeChar">Change Character</button>
+        <button class="button restart">Restart</button>
+    </div>
+
+    <script src="js/resources.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/engine.js"></script>
+</body>
+</html>
